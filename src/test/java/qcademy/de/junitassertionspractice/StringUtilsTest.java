@@ -10,7 +10,7 @@ public class StringUtilsTest {
     void testReverse() {
         String original = "JUnit";
         String reversed = StringUtils.reverse(original);
-        assertEquals("tnUJ", reversed, "Reversed word should match the original.");
+        assertEquals("tinUJ", reversed, "Reversed word should match the original.");
     }
 
     @Test
