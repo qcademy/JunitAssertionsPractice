@@ -30,7 +30,7 @@ jobs:
             - name: Check code coverage
               run: |
                 total_coverage=$(grep -Po "\d+(?=%)" build/reports/jacoco/test/html/index.html | head -n 1)
-                if ["$total_coverage" -eq "100"]; then
+                if ["$total_coverage" -eq "100"] then
                     echo "Unit tests passed with 100% code coverage"
                 else
                     echo "Code Coverage is not 100%. Please add more tests."
