@@ -26,6 +26,13 @@ jobs:
               
             - name: Run Tests with Jacoco coverage
               run: ./gradlew test jacocoTestReport --info
+            
+            - name: Archive code coverage results
+              uses: actions/upload-artifact@v3
+              with:
+                name: code-coverage-report
+                path: build/jacocoHtml/index.html
+                retention-days: 21
 
             - name: Check code coverage
               run: ./gradlew jacocoTestCoverageVerification --info
