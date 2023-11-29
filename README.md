@@ -18,8 +18,9 @@ includes a `MathOperations` and `StringUtils` classes.
 ## The Purpose
 The purpose of this project is to practice with [JUnit 5](https://junit.org/junit5/) assertions. It covers a variety of 
 assertion methods to test different scenarios, including basic arithmetic operations, string concatenation, and array manipulation.
-The project has a specific rule of test coverage, it requires 100% (1,0) of coverage. If the coverage is less than 100% then `./gradlew clean test` 
-command will fail. Your goal is to cover the code with unit tests in a way that the result of the command `./gradlew clean test` is `BUILD SUCCESSFUL`.
+The project has a specific rule of test coverage, it requires 100% (1,0) of coverage. If the coverage is less than 100% 
+then `./gradlew clean test jacocoTestCoverageVerification` command will fail. Your goal is to cover the code with unit tests 
+in a way that the result of the command `./gradlew clean test jacocoTestCoverageVerification` is `BUILD SUCCESSFUL`.
 
 ## What is Unit Testing?
 Unit testing is a software testing technique where individual units or components of a software are tested in isolation. 
@@ -45,5 +46,9 @@ are added or code is modified.
    ```
 2. Run tests with build tool [gradle](https://gradle.org/):
     ```bash
-    ./gradlew clean test
+    ./gradlew clean test 
+    ```
+3. Run test coverage analysis:
+    ```bash
+    ./gradlew clean jacocoTestCoverageVerification 
     ```

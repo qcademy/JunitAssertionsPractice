@@ -17,7 +17,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    finalizedBy jacocoTestReport, jacocoTestCoverageVerification // report is always generated after tests run
+    finalizedBy jacocoTestReport // report is always generated after tests run
 
 }
 
