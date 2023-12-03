@@ -1,14 +1,15 @@
-// MathOperationsTest.java
-package de.qcademy.junitpractice;
+package qcademy.de.junitassertionspractice;
 
+import de.qcademy.junitassertionspractice.MathOperations;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class MathOperationsTest {
 
     @Test
-    void testAddition() {
+    void testAdd() {
+        // Test example
         MathOperations calculator = new MathOperations();
         int expectedSum = 42;
         int actualSum = calculator.add(20, 22);
@@ -16,9 +17,34 @@ public class MathOperationsTest {
     }
 
     @Test
-    void testDivisionByZero() {
-        MathOperations calculator = new MathOperations();
-        assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0),
-            "Division by zero should throw an IllegalArgumentException.");
+    void testSubtract() {
+        // Add your test
     }
+
+    @Test
+    void testMultiply() {
+        // Add your test
+    }
+
+    @Test
+    void testDivide() {
+        // Add your test
+    }
+
+    @Test
+    void testDivideByZero() {
+        // Add your test
+    }
+
+    @Test
+    void testSquare() {
+        // Add your test
+    }
+
+    @Test
+    void testIsEven() {
+        // Add your test
+    }
+
+    // Add more tests below if necessary
 }
